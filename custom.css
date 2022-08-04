@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Romantic; src: url(/fonts/ROMANTIC.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,400&display=swap');
+
+
+body {
+    font-family: 'Roboto Serif', serif;
+}
+
+.displaytext {
+    background-image: url(images/Main\ Background.png);
+    background-size: cover;   
+    /* height: 100vh; */
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: Romantic, sans-serif;
+}
+
+.display-font-1 {
+    font-size: 205px;
+    position: relative;
+    top: 100px;
+    z-index: 1;
+}
+
+
+
+.display-font-2 {
+    font-size: 412px;
+    position: relative;
+    bottom: 88px;
+    color: #000;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 400px) {
+    .display-font-1{
+        font-size:60px;
+    }
+    .display-font-2{
+        font-size:120px;
+        top: 45px;
+    }
+}
+
+
+@media (min-width:400px) and (max-width: 700px) {
+    .display-font-1{
+        font-size:76px;
+    }
+    .display-font-2{
+        font-size:153px;
+        top: 30px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+    .display-font-1{
+        font-size:150px;
+    }
+    .display-font-2{
+        font-size:300px;
+        bottom: 40px;
+    }
+}
+
+
+
+@media (min-width: 750px) {
+    .short-description {
+        position: relative;
+        bottom: 130px;
+    }
+
+    .description-button {
+        position:relative;
+        bottom: 130px;
+        }
+}
+
