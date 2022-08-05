@@ -9,6 +9,20 @@ body {
     font-family: 'Roboto Serif', serif;
 }
 
+/* Navbar */
+.navbar {
+    background: #000;
+}
+
+.filter-white {
+    filter: invert(100%) sepia(29%) saturate(0%) hue-rotate(114deg) brightness(107%) contrast(102%);
+}
+
+.navbar-nav li a {
+    color: #fff;
+}
+
+
 .displaytext {
     background-image: url(images/Main\ Background.png);
     background-size: cover;   
