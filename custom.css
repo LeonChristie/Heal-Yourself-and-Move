@@ -18,6 +18,10 @@ body {
 
 
 /* Navbar */
+.nav-top-padding {
+    padding-top: 115px;
+}
+
 .nav-item {
     padding: 0 17px;
 
@@ -42,6 +46,10 @@ body {
 }
 .custom-link:hover {
     color: #c4c4c4;
+}
+
+h2 {
+    font-size:60px;
 }
 
 
@@ -77,6 +85,10 @@ h1 {
 .short-description {
     font-weight: 100;
 }
+
+
+
+
 
 
 /* Qoute Section */
