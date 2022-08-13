@@ -4,24 +4,48 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 body {
-    font-family: 'Roboto Serif', serif;
+    font-family: 'Promt', sans-serif;
 }
 
+
+.navbar, .qoute, .footer {
+    background: rgb(0, 0, 0);
+}
+
+
 /* Navbar */
-.navbar {
-    background: #000;
+.nav-item {
+    padding: 0 17px;
+
+}
+
+.navalign {
+    position: relative;
+    top: 8px;
 }
 
 .filter-white {
     filter: invert(100%) sepia(29%) saturate(0%) hue-rotate(114deg) brightness(107%) contrast(102%);
 }
 
-.navbar-nav li a {
+.navbar-nav li a, .custom-link {
     color: #fff;
 }
 
+.custom-link {
+    padding: 0 0 0 10px;
+    text-decoration: none;
+}
+.custom-link:hover {
+    color: #c4c4c4;
+}
+
+
+/* Display Section */
 
 .displaytext {
     background-image: url(images/Main\ Background.png);
@@ -35,31 +59,71 @@ h1 {
 }
 
 .display-font-1 {
-    font-size: 205px;
+    font-size: 305px;
     position: relative;
-    top: 100px;
+    top: 120px;
     z-index: 1;
 }
 
 
 
 .display-font-2 {
-    font-size: 412px;
+    font-size: 610px;
     position: relative;
-    bottom: 88px;
+    bottom: 160px;
     color: #000;
 }
 
+.short-description {
+    font-weight: 100;
+}
 
+
+/* Qoute Section */
+
+.qoute { 
+    font-weight:100;
+}
+
+
+/* Subscribe */
+
+.subscribe {
+    background-image: url(images/Subscribe\ Background.jpg);   
+    background-size: cover;
+   background-repeat: no-repeat;
+}
+
+/* footer */
+.footer-font {
+    font-family: Romantic, sans-serif;
+}
+
+.font-adjust-ft {
+    font-size: 15px;
+}
+
+.initial-size {
+    font-size: 22px;
+    position: relative;
+    bottom: 7px;
+}
+
+.secondary-size {
+    font-size: 44px;
+    position: relative;
+    bottom: 36px;
+}
 
 /* Media Queries */
 @media (max-width: 400px) {
     .display-font-1{
         font-size:60px;
+        top: 100px;
     }
     .display-font-2{
         font-size:120px;
-        top: 45px;
+        top: 47px;
     }
 }
 
@@ -67,6 +131,7 @@ h1 {
 @media (min-width:400px) and (max-width: 700px) {
     .display-font-1{
         font-size:76px;
+        top: 99px;
     }
     .display-font-2{
         font-size:153px;
@@ -77,6 +142,7 @@ h1 {
 @media (min-width: 701px) and (max-width: 900px) {
     .display-font-1{
         font-size:150px;
+        top: 97px;
     }
     .display-font-2{
         font-size:300px;
@@ -84,7 +150,35 @@ h1 {
     }
 }
 
+@media (min-width: 901px) and (max-width: 1100px) {
+    .display-font-1{
+        font-size:175px;
+    }
+    .display-font-2{
+        font-size:350px;
+        bottom: 40px;
+    }
+}
 
+@media (min-width: 1101px) and (max-width: 1320px) {
+    .display-font-1{
+        font-size:200px;
+    }
+    .display-font-2{
+        font-size:400px;
+        bottom: 63px;
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 1700px) {
+    .display-font-1{
+        font-size:225px;
+    }
+    .display-font-2{
+        font-size:450px;
+        bottom: 85px;
+    }
+}
 
 @media (min-width: 750px) {
     .short-description {
