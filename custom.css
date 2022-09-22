@@ -105,7 +105,7 @@ h1 {
 
 /* Subscribe */
 
-.subscribe {
+.banner {
     background-image: url(images/Subscribe\ Background.jpg);   
     background-size: cover;
    background-repeat: no-repeat;
@@ -153,8 +153,25 @@ h1 {
     height: 100%;
 }
 
+/* Store */
+.banner-bg {
+    background-color: rgba(255, 255, 255, 0.4);
+}
 
 
+.accordion-item {
+    border: 1px solid rgb(173, 173, 173);
+}
+.accordion-button:not(.collapsed) {
+    background: rgba(120, 120, 120, 0.08);
+    color: #000;
+}
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0%);
+}
+.accordion-button:focus {
+    box-shadow: inherit;
+}
 
 
 /* Media Queries */
