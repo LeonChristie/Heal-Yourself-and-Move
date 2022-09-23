@@ -174,6 +174,135 @@ h1 {
 }
 
 
+/* Bag */
+.cart .table{
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(110, 110, 110);
+}
+
+.cart .table thead tr th{
+    border-top: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 0px;
+}
+
+.cart .table tbody tr td{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    vertical-align: middle;
+    align-self: center;
+    border-bottom: 1px solid #9f9f9f;
+}
+
+.cart .table tbody tr td .main .d-flex{
+    padding-right: 30px;
+
+}
+
+.cart .table tbody tr td .main .d-flex img {
+    border-radius: 20px;
+}
+
+.cart .table tbody tr td .main .des{
+    vertical-align: middle;
+    align-self: center;
+}
+
+.cart .table tbody tr td .main .des p{
+    margin-bottom: 0px;
+}
+
+.cart .table tbody tr td h4 {
+    font-size: 16px;
+    color:#000;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.cart .table tbody tr td h5{
+    font-size: 12px;
+    color:#000;
+    margin-bottom: 15px;
+}
+
+.cart .table tr td .remove-btn{
+    color: #375b9d;
+}
+
+.cart .table tbody tr td .counter{
+    margin-bottom: 0px;
+}
+/* Fontawsome icon... */
+.counter i{
+    border: 1px solid #000;
+    padding: 7px;
+    display: inline-block;
+    position:relative;
+}
+
+.cart .table tbody tr td .counter input{
+    width: 50px;
+   text-align: center;
+    height: 40px;
+    outline: none;
+    box-shadow: none;
+}
+
+.checkout ul{
+    border: 2px solid #4d4d4d;
+    border-radius: 5px;
+    background: #f3f3f3;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+
+.checkout ul  li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #252525;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.checkout ul li.subtotal{
+    font-weight: lighter;
+    text-transform: capitalize;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 14px;
+}
+
+.checkout ul li.subtotal span{
+    font-weight: bold;
+
+}
+
+.checkout ul li.cart-total{
+    padding-top: 10px;
+}
+
+.checkout ul li.cart-total span{
+    color: #3c78e7;
+}
+.checkout ul li span{
+    float:right;
+}
+
+.checkout .proceed-btn{
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+    background: #247d0f;
+    text-transform: uppercase;
+    padding: 15px 25px 14px 25px;
+    display: block;
+    text-align: center;
+}
+
 /* Media Queries */
 @media (max-width: 400px) {
     .display-font-1{
