@@ -59,6 +59,46 @@ h2 {
 }
 
 
+/**
+* !bag navbar counter
+**/
+
+.shop-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.cart{
+position: relative;
+}
+.cart-amount{
+    position: absolute;
+    top: 8px;
+    left: 27px;
+    font-size: 16px;
+    background: #3c78e7;
+    color: #fff;
+    padding: 0 8px;
+    border-radius: 5px;
+}
+
+.increments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 25px;
+}
+
+.increments button{
+    border: none;
+    background: #5286e7c8;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
 /* Display Section */
 
 .displaytext {
@@ -175,6 +215,17 @@ h1 {
 
 
 /* Bag */
+
+/* Bad practice, customizing headings or not establish headings at start? */
+h2{
+    font-size: 40px;
+}
+
+.ctn-shop{
+    font-size: 20px;
+    color: #375b9d;
+}
+
 .cart .table{
     margin-bottom: 30px;
     border-bottom: 1px solid rgb(110, 110, 110);
@@ -233,12 +284,27 @@ h1 {
 .cart .table tbody tr td .counter{
     margin-bottom: 0px;
 }
-/* Fontawsome icon... */
-.counter i{
-    border: 1px solid #000;
-    padding: 7px;
-    display: inline-block;
-    position:relative;
+
+.counter span{
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #375b9d;
+    user-select: none;
+}
+
+.counter button{
+    height: 30px;
+    width: 30px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: #375b9d;
+    cursor: pointer;
+}
+.counter button:hover {
+    color:#7d0f0f;
+    
 }
 
 .cart .table tbody tr td .counter input{
