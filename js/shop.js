@@ -6,12 +6,12 @@ let basket = JSON.parse(localStorage.getItem("basketData")) || [];
 
 let generateShop =()=>{
     return (shop.innerHTML= shopItemsData.map((x) => {
-        let{id,name,price,img}=x;
+        let{id,name,price,link,img}=x;
         let search = basket.find((x) => x.id === id) || [];
         return `
         <div id=prduct-id-${id} class="item">
-        <img class="shop-img" src=${img} alt="">
-          <div class="details">
+        <a href=${link}> <img class="shop-img" src=${img} alt="">
+          <div class="details"></a>
             <h3>${name}</h3>
             <div class="price-quantity">
                 <h4>£ ${price}</h4>

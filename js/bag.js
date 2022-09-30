@@ -8,8 +8,7 @@ let basket = JSON.parse(localStorage.getItem("basketData")) || [];
 
 let calculation = () => {
     let cartIcon = document.getElementById("cart-amount");
-    cartIcon.innerHTML = basket.map((x)=> x.item).reduce((x, y) => x + y, 0);
-    
+    cartIcon.innerHTML = basket.map((x)=> x.item).reduce((x, y) => x + y, 0);  
 };
 
 calculation();
@@ -140,7 +139,9 @@ let decrement = (id) => {
     update(selectedItem.id);    
     basket = basket.filter((x) =>  x.item !== 0);
     generateCartItems();
+    totalAmount();
     localStorage.setItem("basketData", JSON.stringify(basket));
+    
 };
 
 let update = (id) => {
@@ -157,6 +158,7 @@ let removeItem = (id) => {
     generateCartItems();
     totalAmount();
     localStorage.setItem("basketData", JSON.stringify(basket));
+    
 };
 
 // let clearCart = () => {
@@ -188,9 +190,9 @@ let totalAmount = () => {
                 </div>
             </div>
         </div>
-        `;    
-    } else return;
+        `;  
+    } else totalCheckout.innerHTML = ``;
 };
 
-totalAmount();
 
+totalAmount();
