@@ -8,7 +8,7 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
 
 
@@ -28,9 +28,24 @@ hr {
     border-width: 3px;
 }
 
+
 /* Navbar */
 .nav-top-padding {
     padding-top: 115px;
+}
+
+.home-header{
+   background: #000;
+}
+
+.title-header {
+    font-family: 'DM Serif Text', serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 70px;
 }
 
 .nav-item {
@@ -41,6 +56,12 @@ hr {
 .navalign {
     position: relative;
     top: 8px;
+}
+
+.navbar-brand {
+    font-family: 'DM Serif Text', serif;
+    font-size: 30px;
+    font-weight: 100px;
 }
 
 .filter-white {
@@ -58,11 +79,6 @@ hr {
 .custom-link:hover {
     color: #c4c4c4;
 }
-
-h2 {
-    font-size:60px;
-}
-
 
 
 /**
@@ -121,19 +137,19 @@ h1 {
 
 
 
+/* Main Content */
+
+h3 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 40px;
+}
+
 
 
 /* Qoute Section */
 
 .qoute { 
     font-weight:100;
-}
-
-.transition-left {
-    transition: trans;
-}
-.transition-right {
-
 }
 
 
@@ -211,9 +227,7 @@ h1 {
 /* Bag */
 
 /* Bad practice, customizing headings or not establish headings at start? */
-h2{
-    font-size: 40px;
-}
+
 
 .ctn-shop{
     font-size: 20px;
@@ -418,9 +432,13 @@ h2{
 .shop-img{
     max-width: 100%;
     height: auto;
+    border-radius: 15px;
 }
 
-
+h5 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 40px;
+}
 /* Media Queries */
 @media (max-width: 400px) {
     .display-font-1{

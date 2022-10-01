@@ -19,7 +19,7 @@ let generateCartItems = () => {
         <div class="container my-5">
             <div class="row justify-content-center text-center">
                 <div class="col my-5">
-                    <h2 class="mb-4">Your items</h2>
+                    <h3 class="mb-4">Your items</h3>
                     <a href="shop.html" class="ctn-shop">Continue Shopping</a>
                 </div>
             </div>
@@ -63,12 +63,12 @@ let generateCartItems = () => {
           </div>
         </td>
         <td>
-          <h4>${name}</h4>
-          <h5>Supplement Complex</h5>
+          <h6>${name}</h6>
+          <p>Supplement Complex</p>
           <a href="#" onclick="removeItem(${id})" class="remove-btn">Remove</a>
         </td>
         <td>
-        <h4>£ ${price}</h4>
+        <p>£ ${price}</p>
         </td>
         <td>
         <div class="increments bag">
@@ -78,7 +78,7 @@ let generateCartItems = () => {
         </div>
         </td>
         <td>
-          <h4>£ ${item*search.price}</h4>
+          <p>£ ${item*search.price}</p>
         </td>
       </tr>  
       </tbody>
@@ -95,7 +95,7 @@ let generateCartItems = () => {
         <div class="container my-5">
             <div class="row justify-content-center text-center">
                 <div class="col my-5">
-                    <h2 class="mb-4">Your bag is empty</h2>
+                    <h3 class="mb-4">Your bag is empty</h3>
                     <a href="shop.html" class="ctn-shop">Continue Shopping</a>
                 </div>
             </div>
