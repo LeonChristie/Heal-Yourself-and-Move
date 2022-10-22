@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <link rel="stylesheet" href="article.css" />
   </head>
   <body>
-    test
+    <div class="article-id"></div>
+    <button class="btn-random">Click me!</button>
+    <div id="markdown"></div>
+
+    <!-- <script>
+      const options1 = {
+        method: "GET",
+        headers: {
+          "X-RapidAPI-Key":
+            "baeb14c53bmsh0028b401ca00f61p101d3ajsn1b306d4fbaf2",
+          "X-RapidAPI-Host": "medium2.p.rapidapi.com",
+        },
+      };
+
+      fetch(
+        "https://medium2.p.rapidapi.com/article/808a5428675f/markdown",
+        options1
+      )
+        .then((response) => response.text())
+        .then((data) => {
+          console.log(data);
+          var converter = new showdown.Converter();
+          var md = data;
+          var html = converter.makeHtml(md);
+          document.querySelector("#markdown").innerHTML = html;
+        });
+    </script> -->
   </body>
   <script src="article.js"></script>
 </html>
