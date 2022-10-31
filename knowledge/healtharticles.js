@@ -6,8 +6,8 @@ const options = {
   },
 };
 
-const articleId = document.querySelector(".article-id");
-const btnRandom = document.querySelector(".btn-random");
+// const articleId = document.querySelector(".article-id");
+// const btnRandom = document.querySelector(".btn-random");
 
 // RANDOM ARTICLE GENERATOR
 // function getRandomArtciles() {
@@ -63,13 +63,16 @@ function getHealthArtcileIds() {
           .then((response) => response.json())
           .then((data) => {
             console.log(data);
-            const title = data.title;
+            const title = data.title
             const subtitle = data.subtitle;
-            const date = data.published_at;
+            const date =data.published_at.slice(0,9);
             // const publication = data.publication_id;
             const image = data.image_url;
             const url = data.url
 
+            var j = i+1;
+            console.log(j)
+            var article = document.getElementById(`article-${j}`);
                 
             fetch(`https://medium2.p.rapidapi.com/user/${data.author}`, options)
 	            .then(response => response.json())
@@ -78,10 +81,6 @@ function getHealthArtcileIds() {
                     const author = userData.fullname
 	            
                    if (data.publication_id === "*Self-Published*") {
-        
-                    var j = i+1;
-                    console.log(j)
-                    var article = document.getElementById(`article-${j}`);
                     article.innerHTML = `<a href=${url} class="article-link" >             
                         <div class="row g-4 my-5 py-3 justify-content-center">
                         <div class="col-9 col-md-3">
@@ -104,37 +103,26 @@ function getHealthArtcileIds() {
                         .then((data) => {
                             console.log(data);
                             const publication = data.name
-                            // function replaceUndefined () {
-                            //     if (typeof(publication) === "undefined") {
-                            //         console.log("Self-Published");
-                            //     }
-                            // };
-                            // REPLACE UNDEFINED WITH SELF-PUBLISHED
                             // TAKE OFF TIME FROM DATE
                             // LIMIT PICTURE SIZE
 
                             // PUT FILTER/EFFECT ON PHOTOS TO MAKE COLOURS MORE HARMONIOUS?
-                     
-
-            var j = i+1;
-            console.log(j)
-            var article = document.getElementById(`article-${j}`);
-            article.innerHTML = `<a href=${url} class="article-link" >             
-                <div class="row g-4 my-5 py-3 justify-content-center">
-                <div class="col-9 col-md-3">
-                <img src=${image} class="img-fluid shadow-lg article-img" alt="">
-                </div>
-                <div class="col-9 col-md-6 d-flex flex-column justify-content-between">
-                    <p class="article-title fw-bold">${title}</p>
-                    <p class="article-subtitle">${subtitle}</p>
-                    <div>
-                        <span class="article-details">${author}</span>
-                        <span class="article-details">${date}</span>
-                        <span class="article-details">${publication}</span>
-                    </div>
-                </div>
-            </div>
-            <a>` 
+                            article.innerHTML = `<a href=${url} class="article-link" >             
+                                <div class="row g-4 my-5 py-3 justify-content-center">
+                                <div class="col-9 col-md-3">
+                                <img src=${image} class="img-fluid shadow-lg article-img" alt="">
+                                </div>
+                                <div class="col-9 col-md-6 d-flex flex-column justify-content-between">
+                                    <p class="article-title fw-bold">${title}</p>
+                                    <p class="article-subtitle">${subtitle}</p>
+                                    <div>
+                                        <span class="article-details">${author}</span>
+                                        <span class="article-details">${date}</span>
+                                        <span class="article-details">${publication}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a>` 
         })             
             }
 
