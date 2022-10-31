@@ -211,6 +211,7 @@ h3 {
 .hvr-grow:focus,
 .hvr-grow:active {
     transform: scale(1.1);
+    color:rgb(0, 0, 0);
 }
 
 /* check if can use headers for below text styling */
@@ -229,6 +230,16 @@ h3 {
 .article-details{
     color: #8e8e8e;  
     padding: 0 20px 0 0;
+}
+
+.article-link,
+.article-link:hover{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.article-img{
+    filter: grayscale(60%) contrast(170%) brightness(95%);
 }
 
 /* The Healing Place */
