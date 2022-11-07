@@ -1,411 +1,399 @@
 @font-face {
-    font-family: Romantic; src: url(/fonts/ROMANTIC.ttf);
+  font-family: Romantic;
+  src: url(/fonts/ROMANTIC.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,400&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
 
 body {
-    font-family: 'Promt', sans-serif;
-    line-height: 1.6;
-    font-size: 20px;
+  font-family: "Promt", sans-serif;
+  line-height: 1.6;
+  font-size: 20px;
 }
 
-.par-intro{
-    font-size: 30px;
-    line-height: 1.3;
+.par-intro {
+  font-size: 30px;
+  line-height: 1.3;
 }
 
-
-.navbar, .qoute, .footer {
-    background: rgb(0, 0, 0);
+.navbar,
+.qoute,
+.footer {
+  background: rgb(0, 0, 0);
 }
 
-hr { 
-    width: 20%;
-    margin-left: auto; 
-    margin-right: auto; 
-    border-width: 3px;
+hr {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 3px;
 }
-
 
 /* Navbar */
 .nav-top-padding {
-    padding-top: 115px;
+  padding-top: 115px;
 }
 
-.home-header{
-   background: #000;
+.home-header {
+  background: #000;
 }
 
 .title-header {
-    font-family: 'DM Serif Text', serif;
-    font-size: 50px;
+  font-family: "DM Serif Text", serif;
+  font-size: 50px;
 }
 
 h2 {
-    font-family: 'DM Serif Text', serif;
-    font-size: 70px;
+  font-family: "DM Serif Text", serif;
+  font-size: 70px;
 }
 
 .nav-item {
-    padding: 0 17px;
-
+  padding: 0 17px;
 }
 
 .navalign {
-    position: relative;
-    top: 8px;
+  position: relative;
+  top: 8px;
 }
 
 .navbar-brand {
-    font-family: 'DM Serif Text', serif;
-    font-size: 30px;
-    font-weight: 100px;
+  font-family: "DM Serif Text", serif;
+  font-size: 30px;
+  font-weight: 100px;
 }
 
 .filter-white {
-    filter: invert(100%) sepia(29%) saturate(0%) hue-rotate(114deg) brightness(107%) contrast(102%);
+  filter: invert(100%) sepia(29%) saturate(0%) hue-rotate(114deg)
+    brightness(107%) contrast(102%);
 }
 
-.navbar-nav li a, .custom-link {
-    color: #fff;
+.navbar-nav li a,
+.custom-link {
+  color: #fff;
 }
 
 .custom-link {
-    padding: 0 0 0 10px;
-    text-decoration: none;
+  padding: 0 0 0 10px;
+  text-decoration: none;
 }
 .custom-link:hover {
-    color: #c4c4c4;
+  color: #c4c4c4;
 }
 
+.home {
+  font-family: Romantic, sans-serif;
+}
+
+.initial-size {
+  font-size: 22px;
+  position: relative;
+  bottom: 7px;
+}
+
+.secondary-size {
+  font-size: 44px;
+  position: relative;
+  bottom: 36px;
+}
 
 /**
 * !bag navbar counter
 **/
 
-
-
-.cart{
-position: relative;
+.cart {
+  position: relative;
 }
-.cart-amount{
-    position: absolute;
-    top: 8px;
-    left: 27px;
-    font-size: 16px;
-    background: #3c78e7;
-    color: #fff;
-    padding: 0 8px;
-    border-radius: 5px;
+.cart-amount {
+  position: absolute;
+  top: 8px;
+  left: 27px;
+  font-size: 16px;
+  background: #3c78e7;
+  color: #fff;
+  padding: 0 8px;
+  border-radius: 5px;
 }
-
 
 /* Display Section */
 
 .displaytext {
-    background-image: url(images/Main\ Background.png);
-    background-size: cover;   
-    /* height: 100vh; */
-    background-repeat: no-repeat;
+  background-image: url(images/Main\ Background.png);
+  background-size: cover;
+  /* height: 100vh; */
+  background-repeat: no-repeat;
 }
 
 h1 {
-    font-family: Romantic, sans-serif;
+  font-family: Romantic, sans-serif;
 }
 
 .display-font-1 {
-    font-size: 305px;
-    position: relative;
-    top: 120px;
-    z-index: 1;
+  font-size: 305px;
+  position: relative;
+  top: 120px;
+  z-index: 1;
 }
 
-
-
 .display-font-2 {
-    font-size: 610px;
-    position: relative;
-    bottom: 160px;
-    color: #000;
+  font-size: 610px;
+  position: relative;
+  bottom: 160px;
+  color: #000;
 }
 
 .short-description {
-    font-weight: 100;
+  font-weight: 100;
 }
-
-
 
 /* Main Content */
 
 h3 {
-    font-family: 'DM Serif Text', serif;
-    font-size: 40px;
+  font-family: "DM Serif Text", serif;
+  font-size: 40px;
 }
-
-
 
 /* Qoute Section */
 
-.qoute { 
-    font-weight:100;
+.qoute {
+  font-weight: 100;
 }
-
 
 /* Subscribe */
 
 .banner {
-    background-image: url(images/Subscribe\ Background.jpg);   
-    background-size: cover;
-   background-repeat: no-repeat;
+  background-image: url(images/Subscribe\ Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* footer */
-.footer-font {
-    font-family: Romantic, sans-serif;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 105%;
 }
 
 .font-adjust-ft {
-    font-size: 15px;
-}
-
-.initial-size {
-    font-size: 22px;
-    position: relative;
-    bottom: 7px;
-}
-
-.secondary-size {
-    font-size: 44px;
-    position: relative;
-    bottom: 36px;
+  font-size: 15px;
 }
 
 /* Knowledge */
 
 /* IF USE ELSEWHERE MAKE IT A BASE STYLE */
 .card {
-    color: #000;
+  color: #000;
 }
 
 .hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
-    transform: scale(1.1);
-    color:rgb(0, 0, 0);
+  transform: scale(1.1);
+  color: rgb(0, 0, 0);
 }
 
 /* check if can use headers for below text styling */
 .article-title {
-    font-family: 'DM Serif Text', serif;
-    font-size: 30px;
-    line-height: 1;
+  font-family: "DM Serif Text", serif;
+  font-size: 30px;
+  line-height: 1;
 }
 
 .article-subtitle {
-    font-size: 23px;
-    line-height: 1.3;
-    color: #2a2a2a;
+  font-size: 23px;
+  line-height: 1.3;
+  color: #2a2a2a;
 }
 
-.article-details{
-    color: #8e8e8e;  
-    padding: 0 20px 0 0;
+.article-details {
+  color: #8e8e8e;
+  padding: 0 20px 0 0;
 }
 
 .article-link,
-.article-link:hover{
-    color:rgb(0, 0, 0);
-    text-decoration: none;
+.article-link:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
-.article-img{
-    filter: grayscale(60%) contrast(170%) brightness(95%);
+.article-img {
+  filter: grayscale(60%) contrast(170%) brightness(95%);
 }
 
 /* The Healing Place */
 
-
-
-
 .embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 
-.embed-container iframe, .embed-container object, .embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Store */
 .banner-bg {
-    background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
-
 
 .accordion-item {
-    border: 1px solid rgb(173, 173, 173);
+  border: 1px solid rgb(173, 173, 173);
 }
 .accordion-button:not(.collapsed) {
-    background: rgba(120, 120, 120, 0.08);
-    color: #000;
+  background: rgba(120, 120, 120, 0.08);
+  color: #000;
 }
 .accordion-button:not(.collapsed)::after {
-    filter: brightness(0%);
+  filter: brightness(0%);
 }
 .accordion-button:focus {
-    box-shadow: inherit;
+  box-shadow: inherit;
 }
-
 
 /* Bag */
 
 /* Bad practice, customizing headings or not establish headings at start? */
 
-
-.ctn-shop{
-    font-size: 20px;
-    color: #375b9d;
+.ctn-shop {
+  font-size: 20px;
+  color: #375b9d;
 }
 
-.cart .table{
-    margin-bottom: 30px;
-    border-bottom: 1px solid rgb(110, 110, 110);
+.cart .table {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(110, 110, 110);
 }
 
-
-.cart .table thead tr th{
-    border-top: 0px;
-    font-size: 18px;
-    font-weight: bold;
-    border-bottom: 0px;
-    text-align: left;
-    width: 20%;
+.cart .table thead tr th {
+  border-top: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 0px;
+  text-align: left;
+  width: 20%;
 }
 
-.cart .table tbody tr td{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    vertical-align: middle;
-    align-self: center;
-    border-bottom: 1px solid #9f9f9f;
-    width: 20%;
-    height: 100px;
-    white-space: nowrap;
+.cart .table tbody tr td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  vertical-align: middle;
+  align-self: center;
+  border-bottom: 1px solid #9f9f9f;
+  width: 20%;
+  height: 100px;
+  white-space: nowrap;
 }
 
-.cart .table tbody tr td .main .d-flex{
-    padding-right: 30px;
-
+.cart .table tbody tr td .main .d-flex {
+  padding-right: 30px;
 }
 
 .cart .table tbody tr td .main .d-flex img {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
-.cart .table tbody tr td .main .des{
-    vertical-align: middle;
-    align-self: center;
+.cart .table tbody tr td .main .des {
+  vertical-align: middle;
+  align-self: center;
 }
 
-.cart .table tbody tr td .main .des p{
-    margin-bottom: 0px;
+.cart .table tbody tr td .main .des p {
+  margin-bottom: 0px;
 }
 
 .cart .table tbody tr td h4 {
-    font-size: 20px;
-    color:#000;
-    margin-bottom: 15px;
-    margin-top: 25px;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 15px;
+  margin-top: 25px;
 }
 
-.cart .table tbody tr td h5{
-    font-size: 12px;
-    color:#000;
-    margin-bottom: 15px;
+.cart .table tbody tr td h5 {
+  font-size: 12px;
+  color: #000;
+  margin-bottom: 15px;
 }
 
-.cart .table tr td .remove-btn{
-    color: #375b9d;
+.cart .table tr td .remove-btn {
+  color: #375b9d;
 }
 
-.cart .table tbody tr td .counter{
-    margin-bottom: 0px;
+.cart .table tbody tr td .counter {
+  margin-bottom: 0px;
 }
 
-.counter span{
-    font-size: 25px;
-    padding: 0 10px;
-    cursor: pointer;
-    color: #375b9d;
-    user-select: none;
+.counter span {
+  font-size: 25px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #375b9d;
+  user-select: none;
 }
 
-.counter button{
-    height: 30px;
-    width: 30px;
-    background: none;
-    border: none;
-    font-size: 25px;
-    color: #375b9d;
-    cursor: pointer;
+.counter button {
+  height: 30px;
+  width: 30px;
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: #375b9d;
+  cursor: pointer;
 }
 .counter button:hover {
-    color:#7d0f0f;
-    
+  color: #7d0f0f;
 }
 
-.cart .table tbody tr td .counter input{
-    width: 50px;
-   text-align: center;
-    height: 40px;
-    outline: none;
-    box-shadow: none;
+.cart .table tbody tr td .counter input {
+  width: 50px;
+  text-align: center;
+  height: 40px;
+  outline: none;
+  box-shadow: none;
 }
 
-.checkout{
-    border: 2px solid #4d4d4d;
-    border-radius: 5px;
-    background: #f3f3f3;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 16px;
-    padding-bottom: 20px;
+.checkout {
+  border: 2px solid #4d4d4d;
+  border-radius: 5px;
+  background: #f3f3f3;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 16px;
+  padding-bottom: 20px;
 }
 
-.checkout{
-    list-style: none;
-    font-size: 16px;
-    font-weight: bold;
-    color: #252525;
-    text-transform: uppercase;
-    overflow: hidden;
+.checkout {
+  list-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #252525;
+  text-transform: uppercase;
+  overflow: hidden;
 }
 
 /* .checkout ul li.subtotal{
@@ -420,164 +408,162 @@ h3 {
 
 } */
 
-.checkout ul li.cart-total{
-    padding-top: 10px;
+.checkout ul li.cart-total {
+  padding-top: 10px;
 }
 
-.checkout .cart-total span{
-    color: #3c78e7;
+.checkout .cart-total span {
+  color: #3c78e7;
 }
-.checkout span{
-    float:right;
+.checkout span {
+  float: right;
 }
-.proceed-btn{
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 5px;
-    color: #fff;
-    background: #247d0f;
-    text-transform: uppercase;
-    padding: 15px 25px 14px 25px;
-    display: block;
-    text-align: center;
-    margin: 5px 0;
+.proceed-btn {
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #fff;
+  background: #247d0f;
+  text-transform: uppercase;
+  padding: 15px 25px 14px 25px;
+  display: block;
+  text-align: center;
+  margin: 5px 0;
 }
 
 /**
 * !shop page
 **/
 
-.increments{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    font-size: 16px;
+.increments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
 }
 
-.increments .fa-solid{
-    border: none;
-    background: #5286e7c8;
-    color: #fff;
-    padding: 5px;
-    border-radius: 3px;
+.increments .fa-solid {
+  border: none;
+  background: #5286e7c8;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 .increments .bag {
-    justify-content: left;
-
+  justify-content: left;
 }
 
-.shop{
-    display: grid;
-    grid-template-columns: 33% 33%;
-    grid-gap: 100px;
-    margin: 100px 300px;
-    justify-content: center;
+.shop {
+  display: grid;
+  grid-template-columns: 33% 33%;
+  grid-gap: 100px;
+  margin: 100px 300px;
+  justify-content: center;
 }
 
-.item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.price-quantity{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.price-quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.shop-img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
+.shop-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
 
 h5 {
-    font-family: 'DM Serif Text', serif;
-    font-size: 40px;
+  font-family: "DM Serif Text", serif;
+  font-size: 40px;
 }
 /* Media Queries */
 @media (max-width: 400px) {
-    .display-font-1{
-        font-size:60px;
-        top: 100px;
-    }
-    .display-font-2{
-        font-size:120px;
-        top: 47px;
-    }
+  .display-font-1 {
+    font-size: 60px;
+    top: 100px;
+  }
+  .display-font-2 {
+    font-size: 120px;
+    top: 47px;
+  }
 }
 
-
-@media (min-width:400px) and (max-width: 700px) {
-    .display-font-1{
-        font-size:76px;
-        top: 99px;
-    }
-    .display-font-2{
-        font-size:153px;
-        top: 30px;
-    }
+@media (min-width: 400px) and (max-width: 700px) {
+  .display-font-1 {
+    font-size: 76px;
+    top: 99px;
+  }
+  .display-font-2 {
+    font-size: 153px;
+    top: 30px;
+  }
 }
 
 @media (min-width: 701px) and (max-width: 900px) {
-    .display-font-1{
-        font-size:150px;
-        top: 97px;
-    }
-    .display-font-2{
-        font-size:300px;
-        bottom: 40px;
-    }
+  .display-font-1 {
+    font-size: 150px;
+    top: 97px;
+  }
+  .display-font-2 {
+    font-size: 300px;
+    bottom: 40px;
+  }
 }
 
 @media (min-width: 901px) and (max-width: 1100px) {
-    .display-font-1{
-        font-size:175px;
-    }
-    .display-font-2{
-        font-size:350px;
-        bottom: 40px;
-    }
+  .display-font-1 {
+    font-size: 175px;
+  }
+  .display-font-2 {
+    font-size: 350px;
+    bottom: 40px;
+  }
 }
 
 @media (min-width: 1101px) and (max-width: 1320px) {
-    .display-font-1{
-        font-size:200px;
-    }
-    .display-font-2{
-        font-size:400px;
-        bottom: 63px;
-    }
+  .display-font-1 {
+    font-size: 200px;
+  }
+  .display-font-2 {
+    font-size: 400px;
+    bottom: 63px;
+  }
 }
 
 @media (min-width: 1301px) and (max-width: 1700px) {
-    .display-font-1{
-        font-size:225px;
-    }
-    .display-font-2{
-        font-size:450px;
-        bottom: 85px;
-    }
+  .display-font-1 {
+    font-size: 225px;
+  }
+  .display-font-2 {
+    font-size: 450px;
+    bottom: 85px;
+  }
 }
 
 @media (min-width: 750px) {
-    .short-description {
-        position: relative;
-        bottom: 130px;
-    }
+  .short-description {
+    position: relative;
+    bottom: 130px;
+  }
 
-    .description-button {
-        position:relative;
-        bottom: 130px;
-        }
+  .description-button {
+    position: relative;
+    bottom: 130px;
+  }
 }
 
 @media (max-width: 800px) {
-    .shop {
-        grid-template-columns: 1fr;
-    }
+  .shop {
+    grid-template-columns: 1fr;
+  }
 }
