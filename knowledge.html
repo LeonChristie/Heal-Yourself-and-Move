@@ -15,73 +15,58 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark  nav-top-padding pt-0 pb-5">      
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark pt-2 pb-2">
 
+  <a class="ps-4" href="index.html"><span class="tt text-white home-logo" data-bs-placement="left"
+      title="(Spiritual) Home">
+      <img class="filter-white" src="/images/HYandMOVEbrand.png" alt="" height="41">
+    </span></a>
 
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse fs-3 justify-content-center align-self-center text-center text-nowrap" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link p-0" href="about.html">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-0" href="thehealingplace.html">THE HEALING PLACE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-0" href="/shop/shop.html">SHOP</a>
+      </li>
+    </ul>
+  </div>
 
-      <div class="container-lg pt-3">   
+    <!-- Navbar toggler -->
+  <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <a class="navbar-brand" href="index.html"> 
-            <div class="text-white home">
-              <div class="initial-size">Heal Yourself</div>
-              <div class="secondary-size">& MOVE</div>
-          </div>
-        </a>
-              <!-- Navbar toggler -->
-          <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-             </button>    
-      
-      
-            <!-- Navbar links -->
-      
-            <div class="collapse navbar-collapse fs-4 ms-2 justify-content-center navalign" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">HOME</a>
-                </li>
-                  <li class="nav-item">
-                   <a class="nav-link" href="about.html">ABOUT</a> 
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="thehealingplace.html">THE HEALING PLACE</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="/shop/shop.html">SHOP</a>
-                  </li>
-                </ul>
-          </div>
-      
-      
-      
-  
-              <a href="/bag.html" class="custom-link"> <span class="d-flex align-items-end"></span>
-                  <div class="cart">Bag
-                    <i class="fa-solid fa-plus-large"></i>
-                    <div id="cart-amount" class="cart-amount">0</div>
-                  </div>
-                </span></a>               
-          </div>
-      
-      
-      
-        </nav>
+  <!-- Bag -->
+  <a href="/bag.html" class="custom-link pe-4"> <span class="cart fs-6">
+      Bag
+      <i class=" fa-solid fa-plus-large"></i>
+      <div id="cart-amount" class="cart-amount">0</div>
+  </span></a>
 
+</nav>
 
 <!-- Main Content -->
 
+<div class="row justify-content-center">
 
  <h2 class="text-center fw-bolder mt-5 pt-4">Knowledge</h2>
 
-<div class="container mt-5">
-  <div class="row justify-content-center">
-    <div class="col-9">
-  <p class="par-intro pt-5">
+<div class="col-6">
+
+  <p class="py-2 fs-3">
     "Knowledge has power. It controls access to oppertunity and advancement" - Peter Drucker. We want to to help remove barriers to the access of information that can empower people to make positive change in their life.
     
     
   </p>
-  <p class="mt-4 py-4">
+  <p class="mt-4 pt-2">
     Understanding has a fundamental place on the HY&M hierarchy of needs. To know the challanges why face and why might have them is an important starting point on the path to growth. At our stage in human history there is a wealth of wisdom and laeding research availble to help us here but many people are unaware and through non-exposure we may miss out valueable oppertunities to improve our lives. We endevour to share such knowledge. Here we share the top monthly articles on medium for three topics. Using the Medium API we fetch and filter for the top 10 articles under tags Self, Health and Neuroscience, and present the key iformation of the articles with links to Medium article urls.
   </p>
  
@@ -92,8 +77,8 @@
 <div class="container">
 <div class="row g-5 my-5 align-items-center justify-content-center">
 
-  <div class="col-8 col-xl-3">
-    <a href="/knowledge/self.html"> 
+  <div class="col-8 col-xl-3 knowledge">
+    <a href="/knowledge/self.html" class="knowledge"> 
       <div class="card hvr-grow">
         <img src="/images/pexels-dazzle-jam-2710063.jpg" class="card-img-top">
         <div class="card-body py-4 text-center">
@@ -105,19 +90,19 @@
   </div>  
 
   <div class="col-8 col-xl-3">
-    <a href="/knowledge/health.html"> 
+    <a href="/knowledge/health.html" class="knowledge"> 
       <div class="card hvr-grow">
         <img src="/images/pexels-editor-belal-3150250.jpg" class="card-img-top">
         <div class="card-body py-4 text-center">
-          <h5 class="card-title fw-bold">Heath</h5>
-          <p class="card-text py-3">How we can look after our bodies, and as a result, our minds</p>
+          <h5 class="fw-bold">Heath</h5>
+          <p class="py-3">How we can look after our bodies, and as a result, our minds</p>
         </div>
       </div>
     </a>  
   </div>  
 
     <div class="col-8 col-xl-3">
-      <a href="/knowledge/neuroscience.html"> 
+      <a href="/knowledge/neuroscience.html" class="knowledge"> 
         <div class="card hvr-grow">
           <img src="/images/david-matos-xtLIgpytpck-unsplash.jpg" class="card-img-top">
           <div class="card-body py-4 text-center">
@@ -132,26 +117,27 @@
 </div>
 
 </div>
-<!-- Footer -->
-
-<div class="row justify-content-center footer pt-5
-">
-<div class="col-8">
-<div class="row text-white">
-<div class="col filter-white">
-    <a href="#home"><img src="/images/om-svgrepo-com.svg" width="41" height="41" alt=""></a>
-</div>
-<div class="col fw-light font-adjust-ft text-start">
-    <div>leonchristie11@gmail.com</div>
-    <div>+44 7854 635 441</div>
-</div>
-<div class="col filter-white text-center">
-    <img src="/images/iconmonstr-linkedin-3 (1).svg" width="41" height="41" alt="">
 </div>
 
-</div>
-</div>
-</div>
+    <!-- Footer -->
+    <div class="d-flex align-items-center footer py-3">
+      <a class="ps-4" href="index.html"><span class="tt text-white home-logo" data-bs-placement="left"
+              title="(Spiritual) Home">
+              <img class="filter-white" src="/images/HYandMOVEbrand.png" alt="" height="41">
+          </span></a>
+
+      <div class="d-flex justify-content-center align-items-center text-center mx-auto">
+          <span class="fw-light contact text-white pe-5">
+              <p>leonchristie11@gmail.com</p>
+              <p>+44 7854 635 441</p>
+          </span>
+          <a class="ps-5" href="index.html"><span class="filter-white text-center">
+                  <img src="/images/iconmonstr-linkedin-3 (1).svg" width="41" height="41" alt="">
+              </span></a>
+      </div>
+
+      <div class="footer-padding"></div>
+  </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

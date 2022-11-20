@@ -44,10 +44,10 @@ function getSelfArtcileIds() {
                    if (data.publication_id === "*Self-Published*") {
                     article.innerHTML = `<a href=${url} class="article-link" >             
                         <div class="row g-4 my-5 py-3 justify-content-center">
-                        <div class="col-9 col-md-3">
+                        <div class="col-2">
                         <img src=${image} class="img-fluid shadow-lg article-img" alt="">
                         </div>
-                        <div class="col-9 col-md-6 d-flex flex-column justify-content-between">
+                        <div class="col-5 d-flex flex-column justify-content-between">
                             <p class="article-title fw-bold">${title}</p>
                             <p class="article-subtitle">${subtitle}</p>
                             <div>
@@ -66,10 +66,10 @@ function getSelfArtcileIds() {
                             const publication = data.name
                             article.innerHTML = `<a href=${url} class="article-link" >             
                                 <div class="row g-4 my-5 py-3 justify-content-center">
-                                <div class="col-9 col-md-3">
+                                <div class="col-2">
                                 <img src=${image} class="img-fluid shadow-lg article-img" alt="">
                                 </div>
-                                <div class="col-9 col-md-6 d-flex flex-column justify-content-between">
+                                <div class="col-5 d-flex flex-column justify-content-between">
                                     <p class="article-title fw-bold">${title}</p>
                                     <p class="article-subtitle">${subtitle}</p>
                                     <div>

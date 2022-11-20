@@ -32,7 +32,7 @@ let generateCartItems = () => {
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Item</th>
+              <th scope="col" style="width: 11%">Item</th>
               <th scope="col"></th>
               <th scope="col">Price</th>
               <th scope="col">Quantity</th>
@@ -55,7 +55,7 @@ let generateCartItems = () => {
             <table class="table">
         <tbody>
         <tr>
-        <td>
+        <td style="width: 10%">
           <div class="main">
             <div class="d-flex">
               <img src=${img} alt="" width="100" height="100">
@@ -63,8 +63,8 @@ let generateCartItems = () => {
           </div>
         </td>
         <td>
-          <h6>${name}</h6>
-          <p>Supplement Complex</p>
+          <h5>${name}</h5>
+          <h6>Supplement Complex</h6>
           <a href="#" onclick="removeItem(${id})" class="remove-btn">Remove</a>
         </td>
         <td>
@@ -73,12 +73,12 @@ let generateCartItems = () => {
         <td>
         <div class="increments bag">
             <i onclick="decrement(${id})" class="fa-solid fa-minus"></i>
-            <div id=${id} class="quantity">${item}</div>
+            <div id=${id} class="quantity">(${item})</div>
             <i onclick="increment(${id})" class="fa-solid fa-plus"></i>
         </div>
         </td>
         <td>
-          <p>£ ${item*search.price}</p>
+          <pm>£ ${item*search.price}</p>
         </td>
       </tr>  
       </tbody>
@@ -154,7 +154,9 @@ let update = (id) => {
 
 let removeItem = (id) => {
     let selectedItem = id;
+
     basket = basket.filter((x) => x.id !== selectedItem.id);
+ 
     generateCartItems();
     totalAmount();
     localStorage.setItem("basketData", JSON.stringify(basket));

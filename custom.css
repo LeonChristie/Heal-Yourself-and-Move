@@ -1,26 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 @font-face {
   font-family: Romantic;
   src: url(/fonts/ROMANTIC.ttf);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,400&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+
+
+
+
+
 
 body {
-  font-family: "Promt", sans-serif;
-  line-height: 1.6;
+  font-family: 'Kanit', sans-serif;
+  line-height: 1.1;
   font-size: 20px;
+  font-weight: 200;
+  width: 100%;
 }
 
-.par-intro {
-  font-size: 30px;
-  line-height: 1.3;
-}
+html, body { overflow-x: hidden; }
 
 .navbar,
 .qoute,
@@ -35,38 +36,26 @@ hr {
   border-width: 3px;
 }
 
-/* Navbar */
-.nav-top-padding {
-  padding-top: 115px;
-}
-
-.home-header {
-  background: #000;
-}
-
-.title-header {
-  font-family: "DM Serif Text", serif;
-  font-size: 50px;
-}
-
 h2 {
-  font-family: "DM Serif Text", serif;
-  font-size: 70px;
+  font-family: Romantic, sans-serif;
+  font-size: 100px;
 }
 
+h4{
+  font-family: Kanit, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+a, button{
+  cursor: pointer;
+}
+
+/* NAVBAR */
 .nav-item {
-  padding: 0 17px;
-}
-
-.navalign {
-  position: relative;
-  top: 8px;
-}
-
-.navbar-brand {
-  font-family: "DM Serif Text", serif;
-  font-size: 30px;
-  font-weight: 100px;
+  padding: 0 50px;
+  font-weight: 300;
+  font-weight: 500;
 }
 
 .filter-white {
@@ -78,121 +67,105 @@ h2 {
 .custom-link {
   color: #fff;
 }
-
 .custom-link {
-  padding: 0 0 0 10px;
+  padding: 0 0 0 63px;
   text-decoration: none;
 }
 .custom-link:hover {
   color: #c4c4c4;
 }
 
-.home {
-  font-family: Romantic, sans-serif;
-}
-
-.initial-size {
-  font-size: 22px;
-  position: relative;
-  bottom: 7px;
-}
-
-.secondary-size {
-  font-size: 44px;
-  position: relative;
-  bottom: 36px;
-}
-
-/**
-* !bag navbar counter
-**/
-
 .cart {
   position: relative;
+  font-weight: 500;
 }
 .cart-amount {
   position: absolute;
-  top: 8px;
-  left: 27px;
+  bottom: 12px;
+  left: 22px;
   font-size: 16px;
-  background: #3c78e7;
+  background: #a904ef;
   color: #fff;
-  padding: 0 8px;
+  padding: 0 4px;
   border-radius: 5px;
 }
 
-/* Display Section */
 
-.displaytext {
-  background-image: url(images/Main\ Background.png);
+
+/* DISPLAY SECTION */
+.display-section, .banner {
+  background-image: url(images/HYandMbgdPS.jpg);
   background-size: cover;
-  /* height: 100vh; */
   background-repeat: no-repeat;
-}
-
-h1 {
-  font-family: Romantic, sans-serif;
-}
-
-.display-font-1 {
-  font-size: 305px;
-  position: relative;
-  top: 120px;
-  z-index: 1;
-}
-
-.display-font-2 {
-  font-size: 610px;
-  position: relative;
-  bottom: 160px;
-  color: #000;
 }
 
 .short-description {
   font-weight: 100;
+  line-height: 100%;
 }
 
-/* Main Content */
 
-h3 {
-  font-family: "DM Serif Text", serif;
-  font-size: 40px;
-}
 
-/* Qoute Section */
 
+/* QOUTE SECTION */
 .qoute {
   font-weight: 100;
+  line-height: 80%;
 }
 
-/* Subscribe */
 
-.banner {
-  background-image: url(images/Subscribe\ Background.jpg);
+
+
+/* MAIN SECTION */
+h3 {
+  font-family: Romantic, sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 70%;
+}
+/*  Not global styles at top? */
+
+.hr-home-page{
+  width: 83%;
+  border-width: 0.5px;
+}
+
+
+
+/* SUBSCRIBE */
+/* .banner {
+  background-image: url(images/);
   background-size: cover;
   background-repeat: no-repeat;
+} */
+
+.form-group{
+  width: 400px;
+  margin: 0 auto;
 }
 
-/* footer */
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 105%;
-}
-
-.font-adjust-ft {
+/* FOOTER */
+.contact {
   font-size: 15px;
+  line-height: 50%;
+  position: relative;
+  top:10px;
 }
 
-/* Knowledge */
+.footer-padding{
+  padding: 0 57.5px 0;
+}
 
-/* IF USE ELSEWHERE MAKE IT A BASE STYLE */
-.card {
-  color: #000;
+
+
+/* KNOWLEDGE */
+.knowledge{
+  color:#000;
+  text-decoration: none;
 }
 
 .hvr-grow {
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -211,13 +184,13 @@ h3 {
 
 /* check if can use headers for below text styling */
 .article-title {
-  font-family: "DM Serif Text", serif;
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 23px;
   line-height: 1;
 }
 
 .article-subtitle {
-  font-size: 23px;
+  font-size: 18px;
   line-height: 1.3;
   color: #2a2a2a;
 }
@@ -234,7 +207,9 @@ h3 {
 }
 
 .article-img {
-  filter: grayscale(60%) contrast(170%) brightness(95%);
+  width: 200px;
+  height: 135px;
+  object-fit: cover;
 }
 
 /* The Healing Place */
@@ -257,7 +232,20 @@ h3 {
   height: 100%;
 }
 
-/* Store */
+.music-title{
+  font-size: 50px;
+  line-height: 70%;
+}
+.music-subtitle{
+  font-size: 25px;
+  line-height: 70%;
+  font-weight: 300;
+}
+
+
+
+
+/* MOVITATE*/
 .banner-bg {
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -276,13 +264,13 @@ h3 {
   box-shadow: inherit;
 }
 
-/* Bag */
 
-/* Bad practice, customizing headings or not establish headings at start? */
 
+/* BAG */
 .ctn-shop {
-  font-size: 20px;
-  color: #375b9d;
+  font-size: 25px;
+  font-weight: 400;
+  color: #004fe2;
 }
 
 .cart .table {
@@ -310,6 +298,7 @@ h3 {
   white-space: nowrap;
 }
 
+
 .cart .table tbody tr td .main .d-flex {
   padding-right: 30px;
 }
@@ -327,15 +316,23 @@ h3 {
   margin-bottom: 0px;
 }
 
-.cart .table tbody tr td h4 {
-  font-size: 20px;
+.cart .table tbody tr td h5 {
+  font-weight: 400;
+  font-size: 40px;
   color: #000;
-  margin-bottom: 15px;
-  margin-top: 25px;
+  margin-bottom: 5px;
 }
 
-.cart .table tbody tr td h5 {
-  font-size: 12px;
+.cart .table tbody tr td h6 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.cart .table tbody tr td p {
+  font-size: 25px;
+  font-weight: 400;
   color: #000;
   margin-bottom: 15px;
 }
@@ -413,7 +410,7 @@ h3 {
 }
 
 .checkout .cart-total span {
-  color: #3c78e7;
+  color: #000000;
 }
 .checkout span {
   float: right;
@@ -423,7 +420,7 @@ h3 {
   font-weight: bold;
   border-radius: 5px;
   color: #fff;
-  background: #247d0f;
+  background: #a904ef;
   text-transform: uppercase;
   padding: 15px 25px 14px 25px;
   display: block;
@@ -431,34 +428,34 @@ h3 {
   margin: 5px 0;
 }
 
-/**
-* !shop page
-**/
 
+
+
+/* SHOP */
 .increments {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .increments .fa-solid {
   border: none;
-  background: #5286e7c8;
+  background: #a804ef85;
   color: #fff;
   padding: 5px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
-.increments .bag {
+.increments, .bag {
   justify-content: left;
 }
 
 .shop {
   display: grid;
   grid-template-columns: 33% 33%;
-  grid-gap: 100px;
+  grid-gap: 50px;
   margin: 100px 300px;
   justify-content: center;
 }
@@ -474,6 +471,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: 500;
 }
 
 .shop-img {
@@ -483,11 +481,12 @@ h3 {
 }
 
 h5 {
-  font-family: "DM Serif Text", serif;
+  font-family: Romantic, sans-serif;
   font-size: 40px;
 }
 /* Media Queries */
-@media (max-width: 400px) {
+/* old display text styling */
+/* @media (max-width: 400px) {
   .display-font-1 {
     font-size: 60px;
     top: 100px;
@@ -560,10 +559,20 @@ h5 {
     position: relative;
     bottom: 130px;
   }
-}
+} */
 
-@media (max-width: 800px) {
-  .shop {
-    grid-template-columns: 1fr;
+@media (max-width:550px){
+  .form-group{
+    width: 200px;
   }
 }
+
+
+@media (max-width: 1100px) {
+  .shop {
+    grid-template-columns: 1fr;
+    margin: 100px 100px;
+  }
+}
+
+

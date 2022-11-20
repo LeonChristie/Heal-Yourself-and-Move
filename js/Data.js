@@ -17,7 +17,7 @@ let shopItemsData = [{
     name: "Movitate",
     price: 10,
     link: "medcourse.html",
-    img: "/images/Movitate.jpg", 
+    img: "/images/Movitate1.jpg", 
     
 },    
 {

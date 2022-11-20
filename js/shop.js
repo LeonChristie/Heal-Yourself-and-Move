@@ -1,35 +1,35 @@
 let shop = document.getElementById("shop");
-
+let neuro = document.getElementById("neuro");
 
 
 let basket = JSON.parse(localStorage.getItem("basketData")) || [];
 
-let generateShop =()=>{
-    return (shop.innerHTML= shopItemsData.map((x) => {
+let generateShop =()=>{    
+    return (
+        shop.innerHTML= shopItemsData.map((x) => {
         let{id,name,price,link,img}=x;
         let search = basket.find((x) => x.id === id) || [];
         return `
         <div id=prduct-id-${id} class="item">
         <a href=${link}> <img class="shop-img shadow-lg" src=${img} alt="">
           <div class="details"></a>
-            <h5 class="fw-bold pt-3">${name}</h5>
+            <p class="fw-bold fs-2 pt-3">${name}</p>
             <div class="price-quantity">
-                <h5 class="fw-bold pb-3">£ ${price}</h5>
-                    <div class="increments">
-                        <i onclick="decrement(${id})" class="fa-solid fa-minus"></i>
-                        <div id=${id} class="quantity">
-                        ${search.item === undefined ? 0 : search.item}
-                        </div>
-                        <i onclick="increment(${id})" class="fa-solid fa-plus"></i>
-                    </div>
+                <p class="pb-1 fs-3">£ ${price}</p>
+
             </div>
           </div>
       </div>
         `
     }).join(""));
+
 };
 
+
 generateShop();
+
+
+
 
 let increment = (id)=>{
     let selectedItem = id;
