@@ -25,11 +25,7 @@ let generateShop =()=>{
 
 };
 
-
 generateShop();
-
-
-
 
 let increment = (id)=>{
     let selectedItem = id;

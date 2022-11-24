@@ -163,12 +163,6 @@ let removeItem = (id) => {
     
 };
 
-// let clearCart = () => {
-//     basket = [];
-//     generateCartItems();
-//     localStorage.setItem("basketData", JSON.stringify(basket));
-// }
-
 let totalAmount = () => {
     if (basket.length !== 0) {
         let amount = basket
