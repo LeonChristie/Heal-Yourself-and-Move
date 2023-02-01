@@ -1,7 +1,7 @@
 
 const options = {method: "GET",
 headers: {
-  "X-RapidAPI-Key": "bf889814c4msh3b8802b627e0068p16ab57jsnb7e2da2e0043",
+  "X-RapidAPI-Key": "946a15a39fmsh79384935cfe0dd7p1f7af4jsn48405d467baf",
   "X-RapidAPI-Host": "medium2.p.rapidapi.com",
 },
 };
