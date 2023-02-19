@@ -1,21 +1,17 @@
+"use strict";
 let label = document.getElementById("label");
 let shoppingCart = document.getElementById("shopping-cart");
 let tableHead = document.getElementById("table-head");
 let totalCheckout = document.getElementById("total-checkout");
-
 let basket = JSON.parse(localStorage.getItem("basketData")) || [];
-
-
 let calculation = () => {
     let cartIcon = document.getElementById("cart-amount");
-    cartIcon.innerHTML = basket.map((x)=> x.item).reduce((x, y) => x + y, 0);  
+    cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
 };
-
 calculation();
-
 let generateCartItems = () => {
-    if(basket.length !==0){
-        label.innerHTML  = `
+    if (basket.length !== 0) {
+        label.innerHTML = `
         <div class="container my-5">
             <div class="row justify-content-center text-center">
                 <div class="col my-5">
@@ -47,7 +43,7 @@ let generateCartItems = () => {
         return (shoppingCart.innerHTML = basket.map((x) => {
             let { id, item } = x;
             let search = shopItemsData.find((y) => y.id === id) || [];
-            let {img, name, price} = search;
+            let { img, name, price } = search;
             return `
             <div class="container">
             <div class="cart">
@@ -78,7 +74,7 @@ let generateCartItems = () => {
         </div>
         </td>
         <td>
-          <pm>£ ${item*search.price}</p>
+          <pm>£ ${item * search.price}</p>
         </td>
       </tr>  
       </tbody>
@@ -89,9 +85,8 @@ let generateCartItems = () => {
       `;
         }).join(""));
     }
-    else{
-        
-        label.innerHTML  = `
+    else {
+        label.innerHTML = `
         <div class="container my-5">
             <div class="row justify-content-center text-center">
                 <div class="col my-5">
@@ -105,74 +100,61 @@ let generateCartItems = () => {
         shoppingCart.innerHTML = ``;
     }
 };
-
 generateCartItems();
-
-let increment = (id)=>{
+let increment = (id) => {
     let selectedItem = id;
-    let search = basket.find((x)=> x.id === selectedItem.id);
-
-    if(search === undefined){    
+    let search = basket.find((x) => x.id === selectedItem.id);
+    if (search === undefined) {
         basket.push({
             id: selectedItem.id,
-            item: 1,  
+            item: 1,
         });
     }
-    else{
+    else {
         search.item += 1;
     }
-
     generateCartItems();
-    update(selectedItem.id);  
+    update(selectedItem.id);
     localStorage.setItem("basketData", JSON.stringify(basket));
 };
 let decrement = (id) => {
     let selectedItem = id;
-    let search = basket.find((x)=> x.id === selectedItem.id);
-
-    if (search === undefined) return;
-    else if(search.item === 0) return;
-    else{
+    let search = basket.find((x) => x.id === selectedItem.id);
+    if (search === undefined)
+        return;
+    else if (search.item === 0)
+        return;
+    else {
         search.item -= 1;
     }
-
-    update(selectedItem.id);    
-    basket = basket.filter((x) =>  x.item !== 0);
+    update(selectedItem.id);
+    basket = basket.filter((x) => x.item !== 0);
     generateCartItems();
     totalAmount();
     localStorage.setItem("basketData", JSON.stringify(basket));
-    
 };
-
 let update = (id) => {
- let search = basket.find((x) => x.id === id);   
-
- document.getElementById(id).innerHTML = search.item;
- calculation();
- totalAmount();
+    let search = basket.find((x) => x.id === id);
+    document.getElementById(id).innerHTML = search.item;
+    calculation();
+    totalAmount();
 };
-
 let removeItem = (id) => {
     let selectedItem = id;
-
     basket = basket.filter((x) => x.id !== selectedItem.id);
- 
     generateCartItems();
     totalAmount();
     localStorage.setItem("basketData", JSON.stringify(basket));
-    
 };
-
 let totalAmount = () => {
     if (basket.length !== 0) {
         let amount = basket
             .map((x) => {
-                let { item, id} = x;
-                let search = shopItemsData.find((y) => y.id === id) || [];
-
-                return item * search.price;
-            })
-        .reduce((x, y) => x + y, 0);
+            let { item, id } = x;
+            let search = shopItemsData.find((y) => y.id === id) || [];
+            return item * search.price;
+        })
+            .reduce((x, y) => x + y, 0);
         totalCheckout.innerHTML = `
         <div class="container">
             <div class="row justify-content-end">
@@ -186,9 +168,9 @@ let totalAmount = () => {
                 </div>
             </div>
         </div>
-        `;  
-    } else totalCheckout.innerHTML = ``;
+        `;
+    }
+    else
+        totalCheckout.innerHTML = ``;
 };
-
-
 totalAmount();
